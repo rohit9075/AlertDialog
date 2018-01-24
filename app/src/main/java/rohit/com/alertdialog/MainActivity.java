@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
         // This is testing for push
+        
+        // Testing for pull
 
 
         mButtonDialog = (Button)findViewById(R.id.button_dialog);
