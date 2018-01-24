@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // This is testing for push
+
 
         mButtonDialog = (Button)findViewById(R.id.button_dialog);
         mButtonDialog.setOnClickListener(new View.OnClickListener() {
