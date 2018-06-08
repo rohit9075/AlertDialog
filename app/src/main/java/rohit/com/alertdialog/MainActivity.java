@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity  {
                 // Setting Dialog Message
                 alertDialog.setMessage("Are you sure you want to Log OUt");
 
+                // Preventing the alertDialog to cancel on tapping in the free space in activity
+                alertDialog.setCancelable(false);
+
                 // Setting Icon to Dialog
                 //  alertDialog.setIcon(R.drawable.delete);
 
