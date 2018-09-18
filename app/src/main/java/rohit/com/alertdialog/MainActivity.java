@@ -10,22 +10,16 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  {
 
-    private Button mButtonDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // This is testing for push
-        
-        // Testing for pull
-
-
-        mButtonDialog = (Button)findViewById(R.id.button_dialog);
+        Button mButtonDialog = (Button) findViewById(R.id.button_dialog);
         mButtonDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
 
                 // Setting Dialog Title
