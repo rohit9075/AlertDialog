@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button mButtonDialog = (Button) findViewById(R.id.button_dialog);
+        Button mButtonDialog = findViewById(R.id.button_dialog);
         mButtonDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,11 +31,16 @@ public class MainActivity extends AppCompatActivity  {
                 // Preventing the alertDialog to cancel on tapping in the free space in activity
                 alertDialog.setCancelable(false);
 
-                // Setting Icon to Dialog
-                //  alertDialog.setIcon(R.drawable.delete);
 
                 // Setting Positive "Yes" Button
                 alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+
+                    /**
+                     *
+                     * @param dialog DialogInterface: the dialog that received the click
+                     * @param which 	int: the button that was clicked (ex. DialogInterface.BUTTON_POSITIVE)
+                     *                 or the position of the item clicked
+                     */
                     public void onClick(DialogInterface dialog, int which) {
 
                         // Write your code here to invoke YES event
